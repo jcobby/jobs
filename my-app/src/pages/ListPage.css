@@ -1,0 +1,179 @@
+
+
+   .container {
+    position: relative;
+  }
+  
+  .svg-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .navbar {
+    position: absolute;
+    top: 110px; /* Adjust the top value to position the navbar */
+    left: 0px; /* Adjust the left value to position the navbar */
+    z-index: 2;
+    margin-left: 170px;
+    margin-right: 170px;
+    align-self: middle;
+
+    /* Additional styling for the navbar */
+    /* ... */
+  }
+  
+  .searchbox {
+    width: 2100px; /* Set the desired width here */
+  }
+  
+  .search-box-large {
+    width: 2150px; /* Adjust the width as needed */
+  }
+
+  .devian {
+    background-color: #F4F6F8;
+  }
+
+  /* .devian {
+    color: blue;
+  }
+   */
+  
+  input.input-search {
+    padding-left: 4.375rem;
+
+  }
+
+
+   svg.search {
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 35px;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+  }
+
+  input.input-location {
+    padding-left: 4.375rem;
+
+  }
+
+
+  svg.location {
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 565px;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+  }
+
+
+  input.input-check {
+    padding-left: 4.375rem;
+
+  }
+
+  svg.check {
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 475px;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+  }
+  
+  button.button-search {
+    position: absolute;
+    margin-top: 19px;
+    margin-left: 115g5px;
+    height: 50px;
+    width: 120px;
+    border-radius: 8px;
+    background-color: blue;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .cardd {
+    width: 400px;
+    height:250px; 
+    background-color: white;
+    border-radius: 4px;
+    padding: 40px;
+    border: blue;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    z-index: 1;
+    position: absolute;
+  }
+
+  .imagee {
+    width: 80px;
+    padding-top: 0px;
+    top: -30px;
+    left: 50px;
+    z-index: 2;
+    position: absolute;
+
+  }
+
+ 
+  
+  .card-content {
+    margin-top: 8px;
+    
+  }
+
+  .card-description-top {
+    font-size: 16px;
+    color: #888;
+    margin-top: 8px; 
+    margin-bottom: 3px;
+  }
+  
+  .card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    margin-top: 1px;
+
+  }
+
+
+
+  
+  .card-description-bottom {
+    font-size: 16px;
+    color: #888;
+    margin-top: 8px;
+    margin-bottom: 40px;
+    
+  }
+  
+  .card-span {
+color: blue;
+font-weight: bold;
+
+  }
