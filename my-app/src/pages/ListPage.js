@@ -3,6 +3,7 @@ import './ListPage.css'
 import { Navbar, Container, FormControl, Form, Button, Row, Col, Image } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import shopping_bag from '../images/shopping_bag.png'
+import det from '../SomeDetails'
 
 
 
@@ -49,67 +50,101 @@ function ListPage() {
 
 <Container>
   <Row>
-    <Col>
-    <img class="imagee" src={shopping_bag}></img>
+    {det.map(product => (   <Col key={product._id} sm={12} md={6} lg={3} xl={4}>
 
     <div class="cardd">
-<p class="card-description-top">20h ago  . Part Time</p>
+    <img class="imagee" src={shopping_bag}></img>
+
     <div class="card-content">
       
+    <p class="card-description-top">20h ago  <span style={{ fontWeight:'bolder'}}>.</span> Part Time</p>
+
       
-      
-      <h2 class="card-title">Haskell and PureScript Dev</h2>
+      <h2 class="card-title">{product.title}</h2>
 
       <p class="card-description-bottom" >Blogr</p>
       <span class="card-span">United States</span>
     </div>
     </div>
+    </Col>))}
+    </Row>
+{/* //     <Row>
 
-    <div class="card-content">
-      <h2 class="card-title" >Card 2</h2>
-      <p class="card-description">Card 2 description goes here.</p>
-    </div>
 
-    <div class="card-content">
-      <h2 class="card-title">Card 2</h2>
-      <p class="card-description">Card 2 description goes here.</p>
-    </div>
-    </Col>
 
-    <Col>
-    <div class="card-content">
-      <h2 class="card-title">Card 1</h2>
-      <p class="card-description">Card 1 description goes here.</p>
-    </div>
 
-    <div class="card-content">
-      <h2 class="card-title">Card 2</h2>
-      <p class="card-description">Card 2 description goes here.</p>
-    </div>
 
-    <div class="card-content">
-      <h2 class="card-title">Card 2</h2>
-      <p class="card-description">Card 2 description goes here.</p>
-    </div>
-    </Col>
+//     <Col>
+//     <img class="imagee" src={shopping_bag}></img>
 
-    <Col>
-    <div class="card-content">
-      <h2 class="card-title">Card 1</h2>
-      <p class="card-description">Card 1 description goes here.</p>
-    </div>
+//     <div class="cardd">
+// <p class="card-description-top">20h ago  <span style={{ fontWeight:'boldest'}}>.</span> Part Time</p>
+//     <div class="card-content">
+      
+      
+      
+//       <h2 class="card-title">Haskell and PureScript Dev</h2>
 
-    <div class="card-content">
-      <h2 class="card-title">Card 2</h2>
-      <p class="card-description">Card 2 description goes here.</p>
-    </div>
+//       <p class="card-description-bottom" >Blogr</p>
+//       <span class="card-span">United States</span>
+//     </div>
+//     </div>
 
-    <div class="card-content">
-      <h2 class="card-title">Card 2</h2>
-      <p class="card-description">Card 2 description goes here.</p>
-    </div>
-    </Col>
-  </Row>
+
+
+
+
+
+
+
+
+
+
+//     <div class="card-content">
+//       <h2 class="card-title" >Card 2</h2>
+//       <p class="card-description">Card 2 description goes here.</p>
+//     </div>
+
+//     <div class="card-content">
+//       <h2 class="card-title">Card 2</h2>
+//       <p class="card-description">Card 2 description goes here.</p>
+//     </div>
+//     </Col>
+
+//     <Col>
+//     <div class="card-content">
+//       <h2 class="card-title">Card 1</h2>
+//       <p class="card-description">Card 1 description goes here.</p>
+//     </div>
+
+//     <div class="card-content">
+//       <h2 class="card-title">Card 2</h2>
+//       <p class="card-description">Card 2 description goes here.</p>
+//     </div>
+
+//     <div class="card-content">
+//       <h2 class="card-title">Card 2</h2>
+//       <p class="card-description">Card 2 description goes here.</p>
+//     </div>
+//     </Col>
+
+//     <Col>
+//     <div class="card-content">
+//       <h2 class="card-title">Card 1</h2>
+//       <p class="card-description">Card 1 description goes here.</p>
+//     </div>
+
+//     <div class="card-content">
+//       <h2 class="card-title">Card 2</h2>
+//       <p class="card-description">Card 2 description goes here.</p>
+//     </div>
+
+//     <div class="card-content">
+//       <h2 class="card-title">Card 2</h2>
+//       <p class="card-description">Card 2 description goes here.</p>
+//     </div>
+//     </Col>
+//   </Row> */}
 </Container>
 
 
