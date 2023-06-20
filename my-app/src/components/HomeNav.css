@@ -1,0 +1,97 @@
+.containernav {
+
+  position: relative;
+  z-index: 1;
+  padding-bottom: 30px;
+  bottom: 50px;
+}
+
+
+
+  
+  .searchbox {
+    width: 2100px; /* Set the desired width here */
+  }
+  
+  .search-box-large {
+    width: 2150px; /* Adjust the width as needed */
+  }
+
+  .devian {
+    background-color: #F4F6F8;
+  }
+
+  /* .devian {
+    color: blue;
+  }
+   */
+  
+  input.input-search {
+    padding-left: 4.375rem;
+
+  }
+
+
+   svg.search {
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 35px;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+  }
+
+  input.input-location {
+    padding-left: 4.375rem;
+
+  }
+
+
+  svg.location {
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 565px;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+  }
+
+
+  input.input-check {
+    padding-left: 4.375rem;
+
+  }
+
+  svg.check {
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 475px;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+  }
+  
+  button.button-search {
+    position: absolute;
+    margin-top: 19px;
+    margin-left: 1155px;
+    height: 50px;
+    width: 120px;
+    border-radius: 8px;
+    background-color: blue;
+  }

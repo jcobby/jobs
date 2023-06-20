@@ -1,28 +1,28 @@
 
 
-   .container {
+.container {
     position: relative;
   }
 
-  div .divsvg{
-    position: absolute;
+  div .divsvg-det{
+    position: relative;
     margin-bottom: 0px;
   }
   
-  .svg-background {
+  .svg-background-det {
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
   }
   
-  .navbar {
+  .navbar-det {
     position: absolute;
     top: 110px; /* Adjust the top value to position the navbar */
     left: 0px; /* Adjust the left value to position the navbar */
     z-index: 2;
-    margin-left: 240px;
-    margin-right: 10px;
+    margin-left: 170px;
+    margin-right: 170px;
     align-self: middle;
 
     /* Additional styling for the navbar */
@@ -37,9 +37,9 @@
     width: 2150px; /* Adjust the width as needed */
   }
 
-  .devian {
+  /* .devian {
     background-color: #F4F6F8;
-  }
+  } */
 
   /* .devian {
     color: blue;
@@ -117,67 +117,3 @@
   }
 
   
-  .cardd {
-    width: 400px;
-    height:100px; 
-    background-color: white;
-    border-radius: 4px;
-    padding: 40px;
-    border: blue;
-    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
-    z-index: 1;
-    margin-bottom: 60px;
-    padding-bottom: 200px;
-  }
-
-  .imagee {
-    width: 80px;
-    padding-top: 0px;
-    top: -73px;
-    left: 0px;
-    z-index: 2;
-    position: relative;
-
-  }
-
- 
-  
-  .card-content {
-    margin-top: 8px;
-    position: relative;
-    top: -53px;
-    
-  }
-
-  .card-description-top {
-    font-size: 16px;
-    color: #888;
-    margin-top: 0px; 
-    margin-bottom: 3px;
-
-  }
-  
-  .card-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 16px;
-    margin-top: 1px;
-
-  }
-
-
-
-  
-  .card-description-bottom {
-    font-size: 16px;
-    color: #888;
-    margin-top: 8px;
-    margin-bottom: 40px;
-    
-  }
-  
-  .card-span {
-color: blue;
-font-weight: bold;
-
-  }
