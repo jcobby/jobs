@@ -12,14 +12,22 @@
     position: relative;
   }
 
-  .imagee {
-    width: 80px;
+  .logo-background-div {
+    width: 60px;
+    height: 60px;
     padding-top: 0px;
     top: -73px;
     left: 0px;
     z-index: 2;
     position: relative;
+    border-radius: 18px;
+    background-color: blue;
 
+  }
+
+  .imagee {
+padding-left: 10px;
+padding-top: 20px;
   }
 
  

@@ -1,5 +1,3 @@
-
-
 const det = [
     {
         "id": 1,

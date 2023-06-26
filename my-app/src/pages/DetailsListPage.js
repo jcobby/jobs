@@ -4,6 +4,7 @@ import Headersvg from '../components/Headersvg';
 import HomeNav from '../components/HomeNav';
 import DetailsPageNav from '../components/DetailsPageNav';
 import DetCard from '../components/DetCard';
+import Footer from '../components/Footer'
 
 
 function DetailsListPage() {
@@ -12,6 +13,7 @@ function DetailsListPage() {
        <Headersvg />
        <DetailsPageNav />
        <DetCard />
+       <Footer />
        
     </div>
   

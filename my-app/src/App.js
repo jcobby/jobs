@@ -2,6 +2,7 @@ import './App.css';
 import ListPage from './pages/ListPage';
 import { Routes, Route } from "react-router-dom";
 import DetailsListPage from './pages/DetailsListPage';
+import Try from './components/Try'
 
 function App() {
   return (
@@ -9,7 +10,8 @@ function App() {
       {/* <ListPage></ListPage> */}
       <Routes>
         <Route path="/" element={<ListPage />} />
-        <Route path="/job/:name" element={<DetailsListPage />} />
+        <Route path="/job/:id" element={<DetailsListPage />} />
+        {/* <Route path="/try" element={<Try />} /> */}
       </Routes>
     </div>
   );
