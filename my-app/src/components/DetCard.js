@@ -1,36 +1,84 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import './DetCard.css'
+import { useParams } from 'react-router-dom/dist/umd/react-router-dom.development'
+import det from '../SomeDetails'
+
 
 
 function DetCard() {
+  const { id } = useParams();
+
+ 
+  // const id = 9
+  // det.filter((item) => {console.log(item)} )
+
+    const filteredItems = det.filter((item) => item.id === parseInt(id))
+  // console.log(filteredItems);
+
+const requirementsItemm = filteredItems.map(item => item.requirements.items)
+
+const roleItems = filteredItems.map(item => item.role.items)
+
+
+  // const itemm = filteredItems.requirements
+  // console.log('the requirements ' + itemm)
+  // console.log('the requirements plus plsd ' + itemm[1])
+
+  // itemm.filter((itemo) => {
+  //   console.log('This is the company: ' + itemo.items);
+  // });
+
+ 
+
   return (
     <div>
       <Container>
+        { filteredItems.map(items => 
         <div className='container-det-card'>
-        <p class="det-description-top"> 1w ago <span style={{ fontWeight:'bolder'}}>.</span> Part Time </p>
-        <h2 class="det-title">Senior Software Engineer
+        <p class="det-description-top"> {items.postedAt} <span style={{ fontWeight:'1000', margin: '4px'}}>. </span>{ items.contract}</p>
+        <h2 class="det-title">{items.position}
         <button className='det-desc-button'>Apply Now</button>
         </h2>
-                <span class="det-span">United Kingdom</span>
-                <p class="det-description" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <span class="det-span">{items.location}</span>
+                <p class="det-description" >{items.description}</p>
                 <h4>Requirements</h4>
-                <p class="det-description" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra magna ac placerat vestibulum lectus mauris. Tincidunt vitae semper quis lectus nulla at volutpat. Elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi. Amet mattis vulputate enim nulla. Aliquet porttitor lacus luctus accumsan tortor posuere. Interdum varius sit amet mattis vulputate. Rhoncus mattis rhoncus urna neque viverra justo. Ut aliquam purus sit amet luctus venenatis lectus magna fringilla. Netus et malesuada fames ac turpis. Turpis massa sed elementum tempus egestas sed sed risus pretium. Condimentum lacinia quis vel eros donec. Pretium nibh ipsum consequat nisl vel pretium. Tempor orci eu lobortis elementum nibh. Amet dictum sit amet justo donec. Tristique sollicitudin nibh sit amet.</p>
-                <p className='det-p-desc'><span style={{paddingRight:'25px', color:'blue', fontWeight:'1000'}}>.</span> Morbi interdum mollis sapien. Sed</p>
-                <p className='det-p-desc'><span style={{paddingRight:'25px', color:'blue', fontWeight:'1000'}}>.</span> Morbi interdum mollis sapien. Sed</p>
-                <p className='det-p-desc'><span style={{paddingRight:'25px', color:'blue', fontWeight:'1000'}}>.</span> Morbi interdum mollis sapien. Sed</p>
-                <p className='det-p-desc'><span style={{paddingRight:'25px', color:'blue', fontWeight:'1000'}}>.</span> Morbi interdum mollis sapien. Sed</p>
+                <p class="det-description" >{items.requirements.content}</p>
+             
+
+                { 
+                requirementsItemm.map( (itemo, index) => 
+                  <ul key={index} style={{ listStyle: 'none'}}>
+                    { 
+                    itemo.map( (str,subIndex) =>
+                    <li key={subIndex} style={{ paddingLeft: '0em', textIndent: '-2.0em' }} className='det-p-desc'> <span style={{ color: 'blue', paddingRight: '1.3em' }}>•</span> {str} </li>
+                    )
+                  }
+                </ul>
+                )
+                }
+
                 <h4 style={{marginTop:'45px'}}>What You Will Do</h4>
-                <p class="det-description">Ac odio tempor orci dapibus ultrices in iaculis nunc sed. Non consectetur a erat nam. Nec feugiat in fermentum posuere urna nec tincidunt praesent semper. Sem et tortor consequat id porta nibh. Eget aliquet nibh praesent tristique. Ac turpis egestas integer eget aliquet nibh praesent tristique magna. Pretium lectus quam id leo in vitae turpis massa sed. Ut eu sem integer vitae justo eget magna fermentum iaculis. Porttitor lacus luctus accumsan tortor posuere ac ut consequat semper.</p>
-                <p className='det-p-desc'><span style={{paddingRight:'25px', color:'blue', fontWeight:'1000'}}>1</span> Morbi interdum mollis sapien. Sed</p>
-                <p className='det-p-desc'><span style={{paddingRight:'25px', color:'blue', fontWeight:'1000'}}>2</span> Morbi interdum mollis sapien. Sed</p>
-                <p className='det-p-desc'><span style={{paddingRight:'25px', color:'blue', fontWeight:'1000'}}>3</span> Morbi interdum mollis sapien. Sed</p>
-                <p className='det-p-desc'><span style={{paddingRight:'25px', color:'blue', fontWeight:'1000'}}>4</span> Morbi interdum mollis sapien. Sed</p>
-            
+                <p class="det-description">{items.role.content}</p>
+
+                {
+                 roleItems.map( (itemo, index) => 
+                  <ul key={index} style={{ listStyleType: 'none' }}>
+                    { itemo.map( (str,subIndex) =>
+                    <li key={subIndex} style={{ paddingLeft: '0em', textIndent: '-2.0em' }} className='det-p-desc' > <span style={{ color: 'blue', paddingRight: '1.1em' }}>{subIndex + 1}</span> {str} </li>
+                    )
+                  }
+                </ul>
+                )
+                }
+              
         </div>
+        ) 
+}
       </Container>
     </div>
-  )
+  
+)
 }
 
 export default DetCard

@@ -50,6 +50,7 @@
  .det-p-desc{
     font-size: 16px;
     color: #888;
+    
  }
 
   .det-span {
@@ -66,3 +67,26 @@ font-size: 14px;
     margin-bottom: 40px;
     
   }
+
+  .tryy {
+    width: 415px;
+    height:100px; 
+    background-color: white;
+    border-radius: 4px;
+    padding: 40px;
+    border: blue;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    z-index: 1;
+    margin-bottom: 60px;
+    padding-bottom: 200px;
+    position: relative;  }
+
+    .role-item::before {
+      content: "\2022";
+  color: red;
+  /* font-weight: bold; */
+  /* display: inline-block;  */
+  /* width: 1em; */
+  margin-left: -0em;
+  list-style-type: lower-roman;
+    }

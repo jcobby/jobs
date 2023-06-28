@@ -18,12 +18,10 @@ function HomeCard() {
             {det.map(product => (   <Col key={product.id} sm={12} md={6} lg={3} xl={4}>
 
             <div class="cardd">
-            {/* <img class="imagee" src={require(product.logo).default}></img> */}
-            {/* <img class="imagee" src={scoot}></img> */}
+            
 
                 <div class="logo-background-div" style={{backgroundColor: product.logoBackground}}>
                 <img className="imagee" src={require(`${product.logo}`)} />
-                {/* <img className="imagee" src={require('./assets/logos/scoot.svg').default}  /> */}
                 </div>
               <div class="card-content">
                 <p class="card-description-top"> {product.postedAt} <span style={{ fontWeight:'bolder'}}>.</span> {product.contract} </p>
