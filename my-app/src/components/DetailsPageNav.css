@@ -14,7 +14,7 @@
     border-radius: 6px;
     border-top-left-radius: 0px;
     /* padding: 40px; */
-    border: blue;
+    /* border: rgb(91, 91, 235); */
     /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
     z-index: 1;
     margin-bottom: 60px;
@@ -55,6 +55,13 @@
     margin-left: 450px;
     border-radius: 6px;
     border: none;
-    color: blue;
-    font-weight: 500;
+    color: rgb(91, 91, 235);
+    /* font-weight: 500; */
+    font-weight: bolder;
+    background-color: rgb(244, 246, 248);
+
+  }
+
+  .dev-button:hover {
+    background-color: rgb(147,155,244);
   }

@@ -17,15 +17,15 @@ function Headersvg() {
 
 <div className='svg-switch'>
   
-<img className='' src={moon}></img>
+<img className='' src={sun}></img>
 
 
 <label class="toggle-switch">
 <input type="checkbox" />
 <span class="slider"></span>
 </label>
+<img className='' src={moon}></img>
 
-<img className='' src={sun}></img>
 </div>
 </div>        
 

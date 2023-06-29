@@ -16,7 +16,7 @@ const filteredItems = det.filter(items => items.id === parseInt(id))
     { filteredItems.map( items => 
     <div className='det-footer'>
         <div className='det-footer-container'>
-            <h3>{items.position}</h3> 
+            <h3 className='h3-foot'>{items.position}</h3> 
             <button className='det-footer-button'>Apply Now</button>
         </div>
      

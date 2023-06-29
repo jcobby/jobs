@@ -17,18 +17,19 @@
     width: 2150px; /* Adjust the width as needed */
   }
 
-  .devian {
-    background-color: #F4F6F8;
-  }
-
-  /* .devian {
-    color: blue;
-  }
-   */
+ 
   
-  input.input-search {
+  .input-search {
     padding-left: 4.375rem;
+    caret-color: rgb(91, 91, 235);
+    border: none;
+    cursor: pointer;
 
+  }
+
+  input:focus, select:focus {
+    outline: none;
+    /* border: none */
   }
 
 
@@ -58,6 +59,9 @@
     border-spacing: 500px; 
     border-width: 3px 2px 3px 2px;
     border-left-style: solid;
+    caret-color: rgb(91, 91, 235);
+    cursor: pointer;
+
   }
 
 
@@ -75,6 +79,12 @@
     color: #aaa;
   }
 
+  .location:focus, select:focus {
+    outline: none;
+    /* border: none */
+
+  }
+
 
   .input-check {
     padding-left: 4.375rem;
@@ -84,7 +94,7 @@
     border-radius: 4px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
-    padding-top: 30px;
+    padding-top: 35px;
   }
 
   
@@ -96,7 +106,7 @@
     height: 50px;
     width: 120px;
     border-radius: 8px;
-    background-color: blue;
+    background-color: rgb(91, 91, 235);
     border: none;
     color: white;
     font-weight: bolder;
@@ -118,12 +128,16 @@
   
   .checkmark {
     position: relative;
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     border: 1px solid #ccc;
     border-radius: 3px;
     margin-right: 8px;
     background-color: #ccc;
+  }
+
+  .checkmark:hover {
+    background-color: rgb(147, 155, 244);
   }
   
   .checkmark::after {
@@ -143,10 +157,13 @@
   
   
   .checkbox-container input[type="checkbox"]:checked + .checkmark {
-    background-color: #2196F3;
+    background-color: rgb(91, 91, 235);
   }
   
   .checkbox-container input[type="checkbox"]:checked + .checkmark::after {
     opacity: 1;
   }
   
+  .h4-foot {
+    font-size: 18px;
+  }

@@ -42,7 +42,7 @@ const roleItems = filteredItems.map(item => item.role.items)
         </h2>
                 <span class="det-span">{items.location}</span>
                 <p class="det-description" >{items.description}</p>
-                <h4>Requirements</h4>
+                <h4 className='h4-size'>Requirements</h4>
                 <p class="det-description" >{items.requirements.content}</p>
              
 
@@ -58,7 +58,7 @@ const roleItems = filteredItems.map(item => item.role.items)
                 )
                 }
 
-                <h4 style={{marginTop:'45px'}}>What You Will Do</h4>
+                <h4 className='h4-size' style={{marginTop:'45px'}}>What You Will Do</h4>
                 <p class="det-description">{items.role.content}</p>
 
                 {

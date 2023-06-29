@@ -36,12 +36,12 @@ padding-left: 1085px;
   .svg-moon{
     position: relative;
     z-index: 1;
-margin-left: -360px;  }
+margin-left: -390px;  }
 
   .svg-sun{
     position: relative;
     z-index: 1;
-    margin-left: -390px;
+    margin-left: -360px;
   }
 
   /* Container for the toggle switch */
@@ -84,9 +84,14 @@ margin-left: -360px;  }
   left: 4px;
   width: 15px;
   height: 15px;
-  background-color: blue;
+  background-color: rgb(61, 61, 219);
+  
   border-radius: 50%;
   transition: transform 0.2s;
+}
+
+.toggle-switch:hover .slider::before {
+  background-color: rgb(147, 155, 244);
 }
 
 /* Toggle switch on state */

@@ -16,11 +16,11 @@
   }
 
   .det-desc-button {
-    font-weight: 500;
+    font-weight: bolder;
     font-size: medium;
     margin-left: 340px;
     color: white;
-    background-color: blue;
+    background-color: rgb(91, 91, 235);
     border-radius: 6px;
     height: 45px;
     width: 130px;
@@ -29,7 +29,7 @@
   }
   
   .det-title {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: bold;
     margin-bottom: 0px;
     margin-top: 0px;
@@ -54,7 +54,7 @@
  }
 
   .det-span {
-color: blue;
+color: rgb(91, 91, 235);
 font-weight: bolder;
 font-size: 14px;
 
@@ -74,7 +74,7 @@ font-size: 14px;
     background-color: white;
     border-radius: 4px;
     padding: 40px;
-    border: blue;
+    border: rgb(91, 91, 235);
     /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
     z-index: 1;
     margin-bottom: 60px;
@@ -89,4 +89,9 @@ font-size: 14px;
   /* width: 1em; */
   margin-left: -0em;
   list-style-type: lower-roman;
+    }
+
+    .h4-size {
+      font-size: 18px;
+      font-weight: bolder;
     }

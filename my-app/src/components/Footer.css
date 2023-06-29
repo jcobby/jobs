@@ -13,7 +13,7 @@
 .det-footer-button{
     margin-left: 500px;
     color: white;
-    background-color: blue;
+    background-color: rgb(91, 91, 235);
     border-radius: 6px;
     height: 45px;
     width: 130px;
@@ -30,3 +30,7 @@
 
 
 }
+
+.h3-foot {
+    font-size: 18px;
+    font-weight: bolder;}

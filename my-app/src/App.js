@@ -7,11 +7,11 @@ import Try from './components/Try'
 function App() {
   return (
     <div className="devian">
-      {/* <ListPage></ListPage> */}
+      {/* <h2>hello</h2> */}
       <Routes>
         <Route path="/" element={<ListPage />} />
         <Route path="/job/:id" element={<DetailsListPage />} />
-        {/* <Route path="/try" element={<Try />} /> */}
+        <Route path="/try" element={<Try />} />
       </Routes>
     </div>
   );
