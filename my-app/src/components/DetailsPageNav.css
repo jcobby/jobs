@@ -4,13 +4,17 @@
     z-index: 1;
     padding-bottom: 30px;
     bottom: 60px;
+    
+    
   }
   
   .cardd-det-nav {
 
     width: 950px;
     height:150px; 
-    background-color: white;
+    /* background-color: white; */
+    background-color: var(--white);
+
     border-radius: 6px;
     border-top-left-radius: 0px;
     /* padding: 40px; */
@@ -22,6 +26,7 @@
     position: relative;
     margin-left: 160px;
     display: flex;
+
   }
 
 
@@ -30,22 +35,28 @@
     height: 150px;
     overflow: hidden;
     border-bottom-left-radius: 6px;
+    
   }
   
   .imagee-det {
     width: 100px;
     margin-left: 20px;
     padding-top: 60px;
+    
 
   }
 
   .dev-title{
     padding: 40px;
+    color: var(--text_color)
+    /* background-color: var(--white); */
+
   }
 
   .dev-description{
     padding-right: 10px;
     color: #6E8098;
+    
   }
 
   .dev-button {
@@ -55,13 +66,13 @@
     margin-left: 450px;
     border-radius: 6px;
     border: none;
-    color: rgb(91, 91, 235);
+    color: var(--comp_site_text);
     /* font-weight: 500; */
     font-weight: bolder;
-    background-color: rgb(244, 246, 248);
+    background-color: var(--check_box);
 
   }
 
   .dev-button:hover {
-    background-color: rgb(147,155,244);
+    background-color: var(--comp_site_hover);
   }

@@ -1,7 +1,12 @@
 
- .devian {
+ /* .devian {
   background-color: #F4F6F8;
 font-family: 'Kumbh Sans', sans-serif; 
  }
 
- 
+  */
+
+  .devian {
+    background-color: var(--background);
+  }
+

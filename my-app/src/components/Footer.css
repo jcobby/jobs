@@ -1,6 +1,14 @@
+/* .divvy {
+    background-color: var(--white);
+    margin-bottom: 200px;
+} */
+
 .det-footer {
-    background-color: white;
+    background-color: var(--white);
     margin-top: 80px;
+    height: 150px;
+    
+    
 }
 
 .det-footer-container {

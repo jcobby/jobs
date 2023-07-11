@@ -4,44 +4,55 @@ div .divsvg{
 
   .head-div {
     position: relative;
-    margin-bottom: 110px;
+    margin-bottom: 6.875rem;
 
   }
   
   
 
   .svg-header {
-    width: 1850px;
+    width: 118.9rem;
         z-index: 1;
         position: absolute;
 
 
   }
 
+ 
+
+  /* .image-container {
+    width: 185.625rem;
+    height: 10rem;
+    z-index: 1;
+    position: absolute;
+    background-image: url("../images/bg-pattern-header.svg");
+    background-size: cover;
+  } */
+
   .svg-logo {
     position: relative;
     z-index: 1;
-    margin-top: 70px;
-padding-left: 280px;
+    margin-top: 4.375rem;
+padding-left: 17.5rem;
   }
 
   .svg-switch {
     position: relative;
     z-index: 2;
-padding-top: 70px;
-padding-left: 1085px;
+padding-top: 4.374rem;
+padding-left: 67.8125rem;
 
   }
 
   .svg-moon{
     position: relative;
     z-index: 1;
-margin-left: -390px;  }
+margin-left: -27.5rem;  }
 
   .svg-sun{
     position: relative;
     z-index: 1;
-    margin-left: -360px;
+    margin-left: -24.375rem;
   }
 
   /* Container for the toggle switch */
@@ -52,10 +63,10 @@ margin-left: -390px;  }
 .toggle-switch {
   position: relative;
   display: inline-block;
-  width: 48px;
-  height: 24px;
-  margin-left: 10px;
-  margin-right: 10px;
+  width: 3rem;
+  height: 1.5rem;
+  margin-left: 0.625rem;
+  margin-right: 0.625rem;
 }
 
 /* Hide the default checkbox */
@@ -71,7 +82,7 @@ margin-left: -390px;  }
   right: 0;
   bottom: 0;
   background-color: white;
-  border-radius: 12px;
+  border-radius: 0.75rem;
   cursor: pointer;
   transition: background-color 0.2s;
 }
@@ -80,10 +91,10 @@ margin-left: -390px;  }
 .toggle-switch .slider::before {
   content: '';
   position: absolute;
-  top: 4px;
-  left: 4px;
-  width: 15px;
-  height: 15px;
+  top: 0.325rem;
+  left: 0.325rem;
+  width: 0.9375rem;
+  height: 0.9375rem;
   background-color: rgb(61, 61, 219);
   
   border-radius: 50%;
@@ -101,6 +112,34 @@ margin-left: -390px;  }
 
 /* Move the knob to the right on toggle switch on state */
 .toggle-switch input[type="checkbox"]:checked + .slider::before {
-  transform: translateX(24px);
+  transform: translateX(1.5rem);
 }
 
+/* @media (max-width: 1600px) {
+  .svg-header {
+    width: 100.625rem;
+        z-index: 1;
+        position: absolute;
+
+
+  }
+
+  .svg-switch {
+    position: relative;
+    z-index: 2;
+padding-top: 4.374rem;
+padding-left: 50.8125rem;
+
+  }
+
+  .svg-moon{
+    position: relative;
+    z-index: 1;
+margin-left: -27.5rem;  }
+
+  .svg-sun{
+    position: relative;
+    z-index: 1;
+    margin-left: -24.375rem;
+  }   
+} */

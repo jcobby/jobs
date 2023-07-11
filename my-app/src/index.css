@@ -1,0 +1,36 @@
+:root {
+    /* --body_background: #f8f6f4; */
+    --violet: rgb(91, 91, 235);
+
+    --light_voilet: rgb(147,155,244);
+    --very_dark_blue: rgb(25, 32, 45);
+    --midnight: rgb(18, 23, 33);
+    --white: white;
+    --light_grey: rgb(244, 246, 248);
+    --gray: rgb(157,174, 194);
+    --dark_grey: rgb(110, 128, 152);
+    --background: rgb(244, 246, 248);
+    --text_color: black;
+    --check_box: rgb(244, 246, 248);
+    --comp_site_hover: rgb(147, 155, 244);
+    --comp_site_text: rgb(91, 91, 235);
+    --border_line: #F4F6F8;
+}
+
+[data-theme='dark'] {
+    --violet: rgb(110, 128, 152);
+    --light_voilet:rgb(110, 128, 152);
+    /* --very_dark_blue: */
+    /* --midnight: */
+    --white: rgb(25, 32, 45);
+    --light_grey: rgb(110, 128, 152);
+    /* --gray: */
+    /* dark_grey: */
+    --background:rgb(18, 23, 33); 
+    --text_color: white;
+    --check_box: rgb(110, 128, 152);
+    --comp_site_hover: rgb(157, 174, 194);
+    --comp_site_text: white;
+    --border_line: rgb(157, 174, 194)
+
+}

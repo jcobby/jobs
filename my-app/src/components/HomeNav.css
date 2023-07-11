@@ -24,6 +24,7 @@
     caret-color: rgb(91, 91, 235);
     border: none;
     cursor: pointer;
+    background-color: var(--white)
 
   }
 
@@ -44,7 +45,7 @@
     /* line-height: 2.375rem; */
     text-align: center;
     pointer-events: none;
-    color: #aaa;
+    /* color: #aaa; */
   }
 
   input.input-location {
@@ -53,14 +54,17 @@
     width: 360px;
     border-bottom: none;
     border-top: none;
-    border-left-color: #F4F6F8;
-    border-right-color: #F4F6F8;
+    border-left-color: var(--border_line);
+    border-right-color: var(--border_line);
     
-    border-spacing: 500px; 
-    border-width: 3px 2px 3px 2px;
+    /* border-spacing: 500px;  */
+    /* border-width: 3px 2px 3px 2px; */
     border-left-style: solid;
     caret-color: rgb(91, 91, 235);
     cursor: pointer;
+    background-color: var(--white);
+    padding-left: 4.375rem;
+
 
   }
 
@@ -90,11 +94,12 @@
     padding-left: 4.375rem;
      width: 415px;
     height:90px; 
-    background-color: white;
-    border-radius: 4px;
+    background-color: var(--white);
+    /* border-radius: 4px; */
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
     padding-top: 35px;
+    color: var(--text_color);
   }
 
   
@@ -110,6 +115,10 @@
     border: none;
     color: white;
     font-weight: bolder;
+  }
+
+  button:hover {
+    background-color: rgb(147, 155, 244);
   }
 
 
@@ -133,7 +142,7 @@
     border: 1px solid #ccc;
     border-radius: 3px;
     margin-right: 8px;
-    background-color: #ccc;
+    background-color: var(--check_box);
   }
 
   .checkmark:hover {

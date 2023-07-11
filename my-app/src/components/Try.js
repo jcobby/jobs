@@ -1,14 +1,19 @@
 import React from 'react'
 import headerdesktop from '../images/bg-pattern-header.svg'
-
+import './Try.css'
+import { ThemeContext } from '../theme';
+import { useContext } from 'react';
+import Headersvg from './Headersvg';
 
 function Try() {
-  return (
-    <div>
-      hello
-      <img src={headerdesktop}></img>
+  const { theme } = useContext(ThemeContext);
 
-    </div>
+
+  return (
+    <div data-theme={theme}>
+      <Headersvg />
+      hello
+<h2>Theme: {theme}</h2>    </div>
   )
 }
 

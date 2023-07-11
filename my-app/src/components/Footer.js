@@ -12,7 +12,7 @@ const filteredItems = det.filter(items => items.id === parseInt(id))
 
 
   return (
-<div>
+<div className='divyy'>
     { filteredItems.map( items => 
     <div className='det-footer'>
         <div className='det-footer-container'>
