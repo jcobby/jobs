@@ -18,15 +18,17 @@
   }
 
   .det-desc-button {
-    font-weight: bolder;
-    font-size: medium;
+    font-size: 17px;
+    height: 45px;
+    width: 130px;
     margin-left: 340px;
     color: white;
     background-color: rgb(91, 91, 235);
     border-radius: 6px;
-    height: 45px;
-    width: 130px;
+    
     border: none;
+    font-weight: 600;
+
 
   }
   

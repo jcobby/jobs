@@ -41,4 +41,5 @@
 
 .h3-foot {
     font-size: 18px;
-    font-weight: bolder;}
+    font-weight: bolder;
+color: var(--text_color);}

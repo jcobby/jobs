@@ -21,7 +21,7 @@ function HomeNav() {
     <div>
       <Container className="containernav">
         <Navbar bg="tranparent" expand="lg" className="navbar">
-          <Form className="d-flex ">
+          <Form className="d-flex " style={{width:"100%"}}>
             <input
               className="input-search"
               type="text"

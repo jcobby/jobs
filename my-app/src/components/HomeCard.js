@@ -21,7 +21,7 @@ function HomeCard() {
     <div>
       <Container>
         <Row>
-            {det.slice(0, amount).map(product => (   <Col key={product.id} sm={12} md={6} lg={3} xl={4}>
+            {det.slice(0, amount).map(product => (   <Col key={product.id} xs={12} sm={6} md={6}  xl={4}>
 
             <div class="cardd">
             

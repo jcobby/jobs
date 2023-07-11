@@ -45,6 +45,22 @@ function Headersvg() {
 
 console.log("begininggggg" + theme)
 
+var windowWidth = window.innerWidth;
+var windowHeight = window.innerHeight;
+
+// Log the window size
+console.log("Window Width: " + windowWidth);
+console.log("Window Height: " + windowHeight);
+
+// Get the width and height of the screen
+var screenWidth = window.screen.width;
+var screenHeight = window.screen.height;
+
+// Log the screen size
+console.log("Screen Width: " + screenWidth);
+console.log("Screen Height: " + screenHeight);
+
+
   return (
     <div className="head-div" >
       {/* <span>{themeMode}</span> */}
