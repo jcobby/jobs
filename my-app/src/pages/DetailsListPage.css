@@ -1,50 +1,25 @@
-
-
-/* .container {
-    position: relative;
-  }
-
-  div .divsvg-det{
-    position: relative;
-    margin-bottom: 0px;
-  }
-  
-  .svg-background-det {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-  } */
-  
+/* 
   .navbar-det {
     position: absolute;
-    top: 110px; /* Adjust the top value to position the navbar */
-    left: 0px; /* Adjust the left value to position the navbar */
+    top: 110px;
+    left: 0px; 
     z-index: 2;
     margin-left: 170px;
     margin-right: 170px;
     align-self: middle;
 
-    /* Additional styling for the navbar */
-    /* ... */
+    
   }
   
   .searchbox {
-    width: 2100px; /* Set the desired width here */
+    width: 2100px; 
   }
   
   .search-box-large {
-    width: 2150px; /* Adjust the width as needed */
+    width: 2150px;
   }
 
-  /* .devian {
-    background-color: #F4F6F8;
-  } */
-
-  /* .devian {
-    color: blue;
-  }
-   */
+  
   
   input.input-search {
     padding-left: 4.375rem;
@@ -116,4 +91,4 @@
     background-color: rgb(91, 91, 235);
   }
 
-  
+   */

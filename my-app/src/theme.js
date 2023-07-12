@@ -1,5 +1,4 @@
 import React, { createContext, useState } from "react";
-import { useMemo } from "react";
 
 export const ThemeContext = createContext({
   theme: "light",
@@ -13,24 +12,9 @@ export const ThemeProvider = ({ children }) => {
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
   };
 
-//   console.log('jjjjjjjjj ' + theme)
-const colorMode = useMemo(
-    () => ({
-      toggleColorMode: () =>
-        setTheme((prev) => (prev === "light" ? "dark" : "light")),
-    }),
-    []
+  return (
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+      {children}
+    </ThemeContext.Provider>
   );
-
-
-  return    (<ThemeContext.Provider value={{theme, toggleTheme }}>
-       {children}
-    </ThemeContext.Provider>)
-//    [theme, colorMode]
-
-    
-    // (<ThemeContext.Provider value={{ theme, toggleTheme }}>
-    //   {children}
-    // </ThemeContext.Provider>)
-
 };

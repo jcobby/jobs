@@ -20,23 +20,7 @@ div .divsvg{
 
   }
 
-  /* .svg-table-header{
-    width: 100%;
-    height: 16.5vh;
-        z-index: 1;
-        position: absolute;
-  } */
-
- 
-
-  /* .image-container {
-    width: 185.625rem;
-    height: 10rem;
-    z-index: 1;
-    position: absolute;
-    background-image: url("../images/bg-pattern-header.svg");
-    background-size: cover;
-  } */
+  
 
   .svg-logo {
     position: relative;
@@ -64,11 +48,7 @@ margin-left: -27.5rem;  }
     margin-left: -24.375rem;
   }
 
-  /* Container for the toggle switch */
-/* Container for the toggle switch */
-/* Container for the toggle switch */
-/* Container for the toggle switch */
-/* Container for the toggle switch */
+
 .toggle-switch {
   position: relative;
   display: inline-block;

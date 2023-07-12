@@ -1,19 +1,8 @@
 import React from "react";
-import {
-  Navbar,
-  Container,
-  FormControl,
-  Form,
-  Button,
-  Row,
-  Col,
-  Image,
-} from "react-bootstrap";
-import shopping_bag from "../images/shopping_bag.png";
+import { Container, Row, Col } from "react-bootstrap";
 import det from "../SomeDetails";
 import { Link } from "react-router-dom/dist/umd/react-router-dom.development";
 import "./HomeCard.css";
-import mouse from "../images/mouse.jpg";
 import "./Headersvg.css";
 import { useState, useEffect } from "react";
 // import scoot from './assets/logos/scoot.svg'
