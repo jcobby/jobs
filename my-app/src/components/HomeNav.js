@@ -60,14 +60,14 @@ function HomeNav() {
                   }}
                 ></input>
               )}
-              <img className="search" src={search}></img>
+              <img className="search" src={search} alt=""></img>
 
               <input
                 className="input-location"
                 type="text"
                 placeholder="Filter by location..."
               />
-              <img className="location" src={location}></img>
+              <img className="location" src={location} alt=""></img>
               {windowWidth > 768 ? (
                 <div
                   className="input-check"
@@ -115,13 +115,14 @@ function HomeNav() {
             className="location-mobile"
             onClick={handleLocationFilterClick}
           >
-            <img src={location_filter}></img>
+            <img src={location_filter} alt=""></img>
           </button>
           <button className="button-search" onClick={handleLocationFilterClick}>
             <img
               className=""
               style={{ filter: "brightness(0) invert(1)" }}
               src={search}
+              alt=""
             ></img>
           </button>
 
@@ -133,7 +134,7 @@ function HomeNav() {
                   type="text"
                   placeholder="Filter by location..."
                 />
-                <img className="pop-up-location" src={location}></img>
+                <img className="pop-up-location" src={location} alt=""></img>
 
                 <div
                   className="pop-up-input-check"

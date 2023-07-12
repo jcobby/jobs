@@ -35,16 +35,16 @@ function Headersvg() {
     <div className="head-div">
      
       {windowWidth > 768 ? (
-        <img className="svg-header" src={headerdesktop}></img>
+        <img className="svg-header" src={headerdesktop} alt=""></img>
       ) : windowWidth > 554 ? (
-        <img className="svg-table-header" src={tabletHeader}></img>
+        <img className="svg-table-header" src={tabletHeader} alt=""></img>
       ) : (
-        <img className="svg-header" src={mobileHeader}></img>
+        <img className="svg-header" src={mobileHeader} alt=""></img>
       )}
       <div style={{ display: "flex" }}>
-        <img className="svg-logo" src={logo}></img>
+        <img className="svg-logo" src={logo} alt=""></img>
         <div className="svg-switch">
-          <img className="" src={sun}></img>
+          <img className="" src={sun} alt=""></img>
 
           <label class="toggle-switch">
             <input
@@ -54,7 +54,7 @@ function Headersvg() {
             />
             <span class="slider"></span>
           </label>
-          <img className="" src={moon}></img>
+          <img className="" src={moon} alt=""></img>
         </div>
       </div>
     </div>

@@ -45,7 +45,7 @@ function DetailsPageNav() {
                 >
                   <img
                     src={require(`${item.logo}`)}
-                    className="imagee-det"
+                    className="imagee-det" alt=""
                   ></img>
                 </div>
                 <div className="dev-title">
@@ -72,6 +72,7 @@ function DetailsPageNav() {
                     <img
                       className="mobile-nav-imagee"
                       src={require(`${item.logo}`)}
+                      alt=""
                     />
                   </div>
                   <div class="mobile-nav-content">

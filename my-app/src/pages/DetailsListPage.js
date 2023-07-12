@@ -1,6 +1,5 @@
 import React from 'react'
 import Header from '../components/Headersvg';
-import HomeNav from '../components/HomeNav';
 import DetailsPageNav from '../components/DetailsPageNav';
 import DetCard from '../components/DetCard';
 import Footer from '../components/Footer'

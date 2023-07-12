@@ -40,7 +40,7 @@ function HomeCard() {
                     class="logo-background-div"
                     style={{ backgroundColor: product.logoBackground }}
                   >
-                    <img className="imagee" src={require(`${product.logo}`)} />
+                    <img className="imagee" src={require(`${product.logo}`)} alt="" />
                   </div>
                   <div class="card-content">
                     <p class="card-description-top">
@@ -78,7 +78,7 @@ function HomeCard() {
                     class="logo-background-div"
                     style={{ backgroundColor: product.logoBackground }}
                   >
-                    <img className="imagee" src={require(`${product.logo}`)} />
+                    <img className="imagee" src={require(`${product.logo}`)} alt="" />
                   </div>
                   <div class="card-content">
                     <p class="card-description-top">
