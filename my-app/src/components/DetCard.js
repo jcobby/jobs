@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Container } from 'react-bootstrap'
 import './DetCard.css'
 import { useParams } from 'react-router-dom/dist/umd/react-router-dom.development'
@@ -20,6 +20,21 @@ const requirementsItemm = filteredItems.map(item => item.requirements.items)
 
 const roleItems = filteredItems.map(item => item.role.items)
 
+const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+useEffect(() => {
+  const handleResize = () => {
+    setWindowWidth(window.innerWidth);
+  };
+
+  window.addEventListener("resize", handleResize);
+
+  // Cleanup the event listener on component unmount
+  return () => {
+    window.removeEventListener("resize", handleResize);
+  };
+}, []); // Empty dependency array to run the effect only once
+
 
   // const itemm = filteredItems.requirements
   // console.log('the requirements ' + itemm)
@@ -37,10 +52,15 @@ const roleItems = filteredItems.map(item => item.role.items)
         { filteredItems.map(items => 
         <div className='container-det-card'>
         <p class="det-description-top"> {items.postedAt} <span style={{ fontWeight:'1000', margin: '4px'}}>. </span>{ items.contract}</p>
-        <h2 class="det-title">{items.position}
+       {windowWidth > 505 ? (<div> <h2 class="det-title">{items.position}
         <button className='det-desc-button'>Apply Now</button>
-        </h2>
-                <span class="det-span">{items.location}</span>
+        </h2>  <span class="det-span">{items.location}</span> </div>
+         ) : (<div><h2 class="det-title">{items.position}
+         
+         </h2>  <span class="det-span">{items.location}</span>
+         <button className='det-desc-button'>Apply Now</button></div>)
+        }
+              
                 <p class="det-description" >{items.description}</p>
                 <h4 className='h4-size'>Requirements</h4>
                 <p class="det-description" >{items.requirements.content}</p>

@@ -64,31 +64,40 @@ useEffect(() => {
     </Container>) : (
       <div>
        <Row>
-       {det.map((product) => (
-         <Col key={product.id} xs={12} sm={6} md={6} xl={4}>
-           <div class="cardd">
+       {filteredItems.map((item) => (
+         <Col key={item.id} xs={12} sm={6} md={6} xl={4}>
+           <div class="mobile-nav-cardd">
              <div
-               class="logo-background-div"
-               style={{ backgroundColor: product.logoBackground }}
+               class="mobile-nav-div"
+               style={{ backgroundColor: item.logoBackground }}
              >
-               <img className="imagee" src={require(`${product.logo}`)} />
+               <img className="mobile-nav-imagee" src={require(`${item.logo}`)} />
              </div>
-             <div class="card-content">
-               <p class="card-description-top">
+             <div class="mobile-nav-content">
+             <div className='mobile-nav-title'>
+              <h4 style={{ fontWeight: 'bolder', paddingLeft: '8px' }}>{item.company}</h4>
+              <p className='mobile-nav-description'>{item.company}.com</p>
+            </div>
+               {/* <p class="card-description-top">
                  {" "}
-                 {product.postedAt}{" "}
+                 {item.postedAt}{" "}
                  <span style={{ fontWeight: "bolder" }}>.</span>{" "}
-                 {product.contract}{" "}
-               </p>
-               <Link
-                 to={`/job/${product.id}`}
+                 {item.contract}{" "}
+               </p> */}
+               {/* <Link
+                 to={`/job/${item.id}`}
                  style={{ color: "inherit", textDecoration: "none" }}
                >
-                 <h3 class="card-title">{product.position}</h3>
-               </Link>
-               <p class="card-description-bottom">{product.company}</p>
-               <span class="card-span">{product.location}</span>
+                 <h3 class="card-title">{item.position}</h3>
+               </Link> */}
+               {/* <p class="card-description-bottom">{item.company}</p> */}
+               <Link to={`${item.website}`}>
+            {/* <button className='dev-button'>Company Site</button> */}
+
+            </Link>
              </div>
+             <button className='mobile-nav-button'>Company Site</button>
+
            </div>
          </Col>
        ))}
