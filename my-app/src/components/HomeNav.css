@@ -5,9 +5,13 @@
   padding-bottom: 30px;
   bottom: 105px;
   width: 100%;
-  background-color: black;
+  /* background-color: black; */
 
 
+}
+
+.d-flex {
+  width: 100%;
 }
 
 
@@ -27,6 +31,8 @@
   border: none;
   cursor: pointer;
   background-color: var(--white);
+  width: 530px;
+  height: 90px;
 }
 
 input:focus,
@@ -74,7 +80,7 @@ select:focus {
 }
 
 .input-check {
-  padding-left: 6.25rem;
+  padding-left: 5.25rem;
   width: 25.9375rem;
   height: 5.625rem;
   background-color: var(--white);
@@ -153,18 +159,458 @@ button:hover {
 
 .h4-foot {
   font-size: 1.125rem;
+  /* margin-right: 100px; */
 }
 
-@media (max-width: 1212px) {
+@media (max-width: 908px) {
    .containernav{
     width: 80%;
    }
-      
-   /* .checkbox-container {
+
+   .input-search {
+    padding-left: 4.25rem;
+    /* padding-right: 30px; */
+    caret-color: rgb(91, 91, 235);
+    border: none;
+    cursor: pointer;
+    background-color: var(--white);
+    width: 220px;
+    height: 90px;
+    
+  }
+
+  .location {
     position: absolute;
     margin-top: 2.1875rem;
-    margin-left: 30rem;
-   
-  } */
+    margin-left: 34%;
+    z-index: 2;
+    display: block;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+  }
+
+  input.input-location {
+    width: 13.75rem;
+    border-bottom: none;
+    border-top: none;
+    border-right: 0.0625rem solid var(--border_line);
+    border-left: 0.0625rem solid var(--border_line);
+    border-left-style: solid;
+    caret-color: rgb(91, 91, 235);
+    cursor: pointer;
+    background-color: var(--white);
+    padding-left: 4.25rem;
+  }
+
+  .input-check {
+    padding-left: 4rem;
+    width: 30.9375rem;
+    height: 5.625rem;
+    background-color: var(--white);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding-top: 2.1875rem;
+    color: var(--text_color);
+    /* display: inline-flex */
+  }
+
+  .checkbox-container {
+    position: absolute;
+    margin-top: 2.1875rem;
+    margin-left: 65%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  button.button-search {
+    position: absolute;
+    margin-top: 1.1875rem;
+    margin-left: 88%;
+    height: 40%;
+    width: 12%;
+    border-radius: 0.5rem;
+    background-color: rgb(91, 91, 235);
+    border: none;
+    color: white;
+    font-weight: bolder;
+  }
+
+  .checkmark {
+    position: relative;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.1875rem;
+    margin-right: 0.5rem;
+    background-color: var(--check_box);
+  }
+
+  .h4-foot {
+    font-size: 1.125rem;
+    margin-right: 7.24rem;
   
+  }
+} 
+  
+  @media (max-width: 878px) {
+    .containernav{
+     width: 80%;
+    }
+ 
+    .input-search {
+     padding-left: 4.25rem;
+     /* padding-right: 30px; */
+     caret-color: rgb(91, 91, 235);
+     border: none;
+     cursor: pointer;
+     background-color: var(--white);
+     width: 220px;
+     height: 90px;
+     
+   }
+ 
+   .location {
+     position: absolute;
+     margin-top: 2.1875rem;
+     margin-left: 37%;
+     z-index: 2;
+     display: block;
+     text-align: center;
+     pointer-events: none;
+     color: #aaa;
+   }
+ 
+   input.input-location {
+     width: 13.75rem;
+     border-bottom: none;
+     border-top: none;
+     border-right: 0.0625rem solid var(--border_line);
+     border-left: 0.0625rem solid var(--border_line);
+     border-left-style: solid;
+     caret-color: rgb(91, 91, 235);
+     cursor: pointer;
+     background-color: var(--white);
+     padding-left: 4.25rem;
+   }
+ 
+   .input-check {
+     padding-left: 4rem;
+     width: 30.9375rem;
+     height: 5.625rem;
+     background-color: var(--white);
+     border-top-left-radius: 0;
+     border-bottom-left-radius: 0;
+     padding-top: 2.1875rem;
+     color: var(--text_color);
+     /* display: inline-flex */
+   }
+ 
+   .checkbox-container {
+     position: absolute;
+     margin-top: 2.1875rem;
+     margin-left: 68%;
+     display: flex;
+     align-items: center;
+     cursor: pointer;
+   }
+ 
+   button.button-search {
+     position: absolute;
+     margin-top: 1.1875rem;
+     margin-left: 88%;
+     height: 40%;
+     width: 12%;
+     border-radius: 0.5rem;
+     background-color: rgb(91, 91, 235);
+     border: none;
+     color: white;
+     font-weight: bolder;
+   }
+ 
+   .checkmark {
+     position: relative;
+     width: 1.5rem;
+     height: 1.5rem;
+     border: 0.0625rem solid #ccc;
+     border-radius: 0.1875rem;
+     margin-right: 0.5rem;
+     background-color: var(--check_box);
+   }
+ 
+   .h4-foot {
+     font-size: 1.125rem;
+     margin-right: 20%;
+  
+   }
+
+
+  
+  }
+  @media (max-width: 768px) {
+    .containernav{
+      width: 100%;
+      left: -12%;
+     }
+
+
+     
+     .input-search {
+      padding-left: 4.25rem;
+      /* padding-right: 30px; */
+      caret-color: rgb(91, 91, 235);
+      border: none;
+      cursor: pointer;
+      background-color: var(--white);
+      width: 220px;
+      height: 90px;
+      
+    }
+
+    .location {
+      position: absolute;
+      margin-top: 2.1875rem;
+      margin-left: 47%;
+      z-index: 2;
+      display: block;
+      text-align: center;
+      pointer-events: none;
+      color: #aaa;
+    }
+
+    input.input-location {
+      width: 13.75rem;
+      border-bottom: none;
+      border-top: none;
+      border-right: 0.0625rem solid var(--border_line);
+      border-left: 0.0625rem solid var(--border_line);
+      border-left-style: solid;
+      caret-color: rgb(91, 91, 235);
+      cursor: pointer;
+      background-color: var(--white);
+      padding-left: 4.25rem;
+    }
+
+    .input-check {
+      padding-left: 4rem;
+      width: 30.9375rem;
+      height: 5.625rem;
+      background-color: var(--white);
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      padding-top: 2.1875rem;
+      color: var(--text_color);
+      /* display: inline-flex */
+    }
+
+    .checkbox-container {
+      position: absolute;
+      margin-top: 2.1875rem;
+      margin-left: 89%;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    button.button-search {
+      position: absolute;
+      margin-top: 1.1875rem;
+      margin-left: 117%;
+      height: 40%;
+      width: 12%;
+      border-radius: 0.5rem;
+      background-color: rgb(91, 91, 235);
+      border: none;
+      color: white;
+      font-weight: bolder;
+    }
+
+    .checkmark {
+      position: relative;
+      width: 1.5rem;
+      height: 1.5rem;
+      border: 0.0625rem solid #ccc;
+      border-radius: 0.1875rem;
+      margin-right: 0.5rem;
+      background-color: var(--check_box);
+    }
+
+    .h4-foot {
+      font-size: 1.125rem;
+      margin-right: 7.24rem;
+      white-space: nowrap;
+   
+    }
+  }
+
+  @media (max-width: 705px) {
+    .containernav{
+      width: 100%;
+      left: -4%;
+     }
+
+
+     
+     .input-search {
+      padding-left: 3.25rem;
+      /* padding-right: 30px; */
+      caret-color: rgb(91, 91, 235);
+      border: none;
+      cursor: pointer;
+      background-color: var(--white);
+      width: 180px;
+      height: 90px;
+      
+    }
+
+    .location {
+      position: absolute;
+      margin-top: 2.1875rem;
+      margin-left: 39%;
+      z-index: 2;
+      display: block;
+      text-align: center;
+      pointer-events: none;
+      color: #aaa;
+    }
+
+    input.input-location {
+      width: 9.75rem;
+      border-bottom: none;
+      border-top: none;
+      border-right: 0.0625rem solid var(--border_line);
+      border-left: 0.0625rem solid var(--border_line);
+      border-left-style: solid;
+      caret-color: rgb(91, 91, 235);
+      cursor: pointer;
+      background-color: var(--white);
+      padding-left: 3.0rem;
+    }
+
+    .input-check {
+      padding-left: 4rem;
+      width: 28.9375rem;
+      height: 5.625rem;
+      background-color: var(--white);
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      padding-top: 2.1875rem;
+      color: var(--text_color);
+      /* display: inline-flex */
+    }
+
+    .checkbox-container {
+      position: absolute;
+      margin-top: 2.1875rem;
+      margin-left: 69%;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    button.button-search {
+      position: absolute;
+      margin-top: 1.1875rem;
+      margin-left: 93%;
+      height: 40%;
+      width: 12%;
+      border-radius: 0.5rem;
+      background-color: rgb(91, 91, 235);
+      border: none;
+      color: white;
+      font-weight: bolder;
+    }
+
+    .checkmark {
+      position: relative;
+      width: 1.5rem;
+      height: 1.5rem;
+      border: 0.0625rem solid #ccc;
+      border-radius: 0.1875rem;
+      margin-right: 0.5rem;
+      background-color: var(--check_box);
+    }
+
+    .h4-foot {
+      font-size: 1.125rem;
+      margin-right: 5.24rem;
+      white-space: nowrap;
+   
+    }
+  }
+
+  @media (max-width:554px) {
+    .mobile-nav{
+width: 100%;
+height: 0px;
+justify-content: center;
+align-items: center;
+display: flex;
+
+    }
+
+     input.input-location {
+      width: 90%;
+      height: 90px;
+      padding: 30px;
+      position: relative;
+  z-index: 1;
+  padding-bottom: 30px;
+  bottom: 70px;
+  /* width: 100%; */
+      /* justify-content: center;
+      align-items: center; */
+      border-bottom: none;
+      border-top: none;
+      /* border-right: 0.0625rem solid var(--border_line);
+      border-left: 0.0625rem solid var(--border_line); */
+      /* border-left-style: solid; */
+      border-radius: 10px;
+      caret-color: rgb(91, 91, 235);
+      cursor: pointer;
+      background-color: var(--white);
+      padding-left: 3.0rem;
+    }
+    .location-mobile{
+      position: absolute;
+      /* margin-top: 0.1875rem; */
+      margin-left: 43%;
+      top: 140px;
+      z-index: 2;
+      display: block;
+      /* text-align: center; */
+      pointer-events: none;
+      color: #aaa;
+    }
+
+    button.button-search {
+      position: absolute;
+      top: 104px;
+
+      /* margin-top: 1.1875rem; */
+      margin-left: 75%;
+      height: 6%;
+      width: 10%;
+      border-radius: 0.5rem;
+      background-color: rgb(91, 91, 235);
+      border: none;
+      color: white;
+      font-weight: bolder;
+      z-index: 2;
+    }
+
+    button:hover {
+      background-color: rgb(147, 155, 244);
+    }
+    /* .search {
+      color: white;
+      position: absolute;
+      margin-top: 2.1875rem;
+      margin-left: 1.7rem;
+      z-index: 2;
+      display: block;
+      text-align: center;
+      pointer-events: none;
+    } */
   }

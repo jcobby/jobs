@@ -20,6 +20,13 @@ div .divsvg{
 
   }
 
+  /* .svg-table-header{
+    width: 100%;
+    height: 16.5vh;
+        z-index: 1;
+        position: absolute;
+  } */
+
  
 
   /* .image-container {
@@ -35,14 +42,14 @@ div .divsvg{
     position: relative;
     z-index: 1;
     margin-top: 4.375rem;
-    padding-left: 17.5rem;
+    padding-left: 15%;
   }
 
   .svg-switch {
     position: relative;
     z-index: 2;
 padding-top: 4.374rem;
-padding-left: 67.8125rem;
+padding-left: 59%;
 
   }
 
@@ -117,29 +124,49 @@ margin-left: -27.5rem;  }
   transform: translateX(1.5rem);
 }
 
-@media (max-width: 1600px) {
-  .svg-header {
-    width: 100%;
-        z-index: 1;
-        position: absolute;
-
-
+@media (max-width: 835px) {
+  .svg-logo {
+    position: relative;
+    z-index: 1;
+    margin-top: 4.375rem;
+    padding-left: 13%;
   }
 
   .svg-switch {
     position: relative;
     z-index: 2;
 padding-top: 4.374rem;
-padding-left: 50.8125rem;
+padding-left: 50%;
 
+  }
+}
+
+
+
+  
+
+
+@media (max-width: 768px) {
+  .svg-table-header{
+    width: 100%;
+    height: 16.5vh;
+        z-index: 1;
+        position: absolute;
   }
 
   .svg-logo {
     position: relative;
     z-index: 1;
     margin-top: 4.375rem;
-    padding-left: 10.5rem;
+    padding-left: 5%;
   }
+
+  .svg-switch {
+    position: relative;
+    z-index: 2;
+padding-top: 4.374rem;
+padding-left: 62%;
+}
 
   .svg-moon{
     position: relative;
@@ -153,38 +180,54 @@ margin-left: -27.5rem;  }
   }   
 }
 
-@media (max-width: 1200px) {
-  .svg-header {
-    width: 100%;
-        z-index: 1;
-        position: absolute;
-
-
+@media (max-width: 705px) {
+  .svg-logo {
+    position: relative;
+    z-index: 1;
+    margin-top: 4.375rem;
+    padding-left: 5%;
   }
 
   .svg-switch {
     position: relative;
     z-index: 2;
 padding-top: 4.374rem;
-padding-left: 24.0125rem;
+padding-left: 52%;
+}
+}
 
-  }
-
+@media (max-width: 554px) {
   .svg-logo {
     position: relative;
     z-index: 1;
-    margin-top: 4.375rem;
-    padding-left: 10.5rem;
+    padding-top: 2.375rem;
+    margin-top: 0px;
+    padding-left: 5%;
+    margin-bottom: 40px;
   }
 
-  .svg-moon{
+  .svg-switch {
     position: relative;
-    z-index: 1;
-margin-left: -27.5rem;  }
+    z-index: 2;
+padding-top: 2.374rem;
+padding-left: 52%;
+}
+}
 
-  .svg-sun{
+@media (max-width: 505px) {
+  .svg-logo {
     position: relative;
     z-index: 1;
-    margin-left: -24.375rem;
-  }   
+    padding-top: 2.375rem;
+    margin-top: 0px;
+    padding-left: 10%;
+    margin-bottom: 40px;
+  }
+
+  .svg-switch {
+    position: relative;
+    z-index: 2;
+padding-top: 2.374rem;
+padding-left: 30%;
+}
 }

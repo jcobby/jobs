@@ -77,8 +77,13 @@ font-weight: bold;
 
   }
 
+  .load-more-div {
+    padding-bottom: 50px;
+
+  }
+
   .load-more-button{
-    margin-left: 600px;
+    margin-left: 40%;
     color: white;
     background-color: rgb(91, 91, 235);
     border-radius: 6px;
@@ -94,4 +99,24 @@ font-weight: bold;
 
 .load-more-button:hover {
   background-color: rgb(147, 155, 244);
+}
+
+@media (max-width: 768px) {
+  .cardd {
+    width: 100%;
+    height:100px; 
+    background-color: var(--white);
+    border-radius: 4px;
+    padding: 40px;
+    border: blue;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    z-index: 1;
+    margin-bottom: 60px;
+    padding-bottom: 200px;
+    position: relative;
+  }
+
+  .tablet-card-container{
+    margin: 15px;
+  }
 }
