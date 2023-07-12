@@ -19,8 +19,10 @@ const filteredItems = det.filter(items => items.id === parseInt(id))
             <h3 className='h3-foot'>{items.position}</h3> 
             <button className='det-footer-button'>Apply Now</button>
         </div>
-     
+     <div className='det-footer-desc-container'>
      <p className='det-footer-desc'>So Digital Inc.</p>
+     </div>
+     
     </div>
     )
     }

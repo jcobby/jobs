@@ -102,3 +102,61 @@ font-size: 14px;
       color: var(--text_color)
 
     }
+
+    @media (max-width: 1210px) {
+      .container-det-card {
+        width: 850px;
+        margin-left: 9%;
+        background-color: white;
+        padding: 60px;
+        border-radius: 6px;
+        margin-top: -90px;
+        background-color: var(--white);
+        /* width: 60%; */
+    
+    }
+    }
+
+    @media (max-width: 1000px) {
+      .container-det-card {
+        width: 636px;
+        margin-left: 9%;
+        background-color: white;
+        padding: 60px;
+        border-radius: 6px;
+        margin-top: -90px;
+        background-color: var(--white);
+        /* width: 60%; */
+    
+    }
+    }
+
+    @media (max-width: 768px) {
+      .container-det-card {
+        width: 130%;
+        margin-left: -15%;
+        background-color: white;
+        padding: 60px;
+        border-radius: 6px;
+        margin-top: -90px;
+        background-color: var(--white);
+        /* width: 60%; */
+    
+      }
+
+      .det-desc-button {
+        font-size: 17px;
+        height: 45px;
+        width: 130px;
+        margin-left: 135px;
+        
+        color: white;
+        background-color: rgb(91, 91, 235);
+        border-radius: 6px;
+        
+        border: none;
+        font-weight: 600;
+    
+    
+      }
+    }
